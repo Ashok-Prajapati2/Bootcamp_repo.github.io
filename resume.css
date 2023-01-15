@@ -1,0 +1,793 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: rgb(151, 248, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.allediting {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 90vw;
+  max-width: 1600px;
+  min-height: 405px;
+  background-color: rgb(248, 248, 248);
+  display: grid;
+  box-shadow: 035px 55px rgba(226, 218, 218, 0.1);
+  grid-template-columns: 1fr 2fr;
+}
+
+.leftside {
+  position: relative;
+  background-color: rgb(29, 36, 167);
+  padding: 40px;
+}
+.img img {
+  
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid rgb(3, 234, 255);
+  border-style: ridge;
+ 
+  align-items: center;
+  justify-content: center;
+  left: 25px;
+}
+.img img:hover  {
+  transform: scale(1.1);
+ border-color: rgb(255, 255, 0);
+}
+.img h2,
+h3 {
+  margin: 5px;
+  color: white;
+  text-align: center;
+}
+#sub_p {
+  margin: 0px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.img :hover  {
+  transform: scale(1.1);
+ border-color: yellow;
+}
+#sub_p:hover{
+  color: #f9dc00;
+}
+
+.ulinr {
+  margin: 5px;
+  color: rgb(123, 119, 4);
+  text-align: center;
+}
+#contact {
+  padding-top: 20px;
+  margin-top: 20px;
+  text-align: left;
+  color: rgb(0, 0, 0);
+  letter-spacing: 1px;
+}
+.contact .contact :hover {
+
+ color: rgb(255, 0, 21);
+}
+.ulcontact {
+  padding-top: 7px;
+  list-style: none;
+}
+.ulcontact li {
+  margin: 5px;
+  position: relative;
+  color: rgb(255, 230, 0);
+}
+.ulcontact li :hover {
+  margin: 5px;
+  position: relative;
+  color: rgb(255, 64, 0);
+}
+ul .io i {
+  color: aqua;
+  margin: 1px;
+}
+.cont_end {
+  color: rgb(105, 105, 0);
+}
+.skills {
+  padding-top: 20px;
+  letter-spacing: 1px;
+}
+ .skills:hover  {
+
+  color: rgb(255, 0, 21);
+ }
+.coding li {
+  margin-top: 20px;
+  font-weight: 800;
+  font-size: large;
+  color: rgb(43, 252, 252);
+}
+.sport li {
+  font-weight: 800;
+  font-size: large;
+  color: rgb(47, 224, 255);
+}
+.grapic li {
+  font-weight: 800;
+  font-size: large;
+  color: rgb(97, 247, 250);
+}
+.html i {
+  color: rgb(255, 251, 9);
+  margin: 7px;
+}
+
+
+.html {
+  margin: 12px;
+}
+.cir,
+.cyc,
+.python,
+.java,
+.css,
+.js {
+  margin: 17px;
+}
+.css i {
+  color: rgb(255, 251, 9);
+  margin: 0px;
+}
+
+.js i {
+  color: rgb(220, 218, 90);
+  margin: 0px;
+}
+.java i {
+  color: rgb(255, 169, 10);
+  margin: 0px;
+}
+.python i {
+  color: rgb(220, 218, 90);
+  margin: 0px;
+}
+.cir i {
+  color: rgb(220, 218, 90);
+  margin: 0px;
+}
+.cyc i {
+  color: rgb(220, 218, 90);
+  margin: 0px;
+}
+.skills i:hover  {
+  transform: scale(1.3);
+ 
+}
+.skills li:hover  {
+  transform: scale(1.1);
+  color: yellow;
+ 
+}
+.sport i:hover  {
+  transform: scale(1.3);
+ 
+}
+
+.ulcontact i:hover  {
+  transform: scale(1.3);
+  color: #ff4500;
+ 
+}
+.ulcontact :hover  {
+  transform: scale(1.1);
+  color: rgb(255, 0, 149);
+ 
+}
+
+
+
+
+.html input[type="range"] {
+  margin: 5px;
+  -webkit-appearance: none;
+  background-color: rgba(233, 243, 242, 0.979);
+  width: 200px;
+  height: 9px;
+  border-radius: 10px;
+  background-image: linear-gradient(#ff4500, #d9ff00);
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+.css input[type="range"] {
+  margin: 9px;
+  -webkit-appearance: none;
+  background-color: rgba(233, 243, 242, 0.979);
+  width: 200px;
+  height: 9px;
+  border-radius: 10px;
+  background-image: linear-gradient(#ff4500, #d9ff00);
+  background-size: 60%;
+  background-repeat: no-repeat;
+}
+.python input[type="range"] {
+  margin: 9px;
+  -webkit-appearance: none;
+  background-color: rgba(233, 243, 242, 0.979);
+  width: 200px;
+  height: 9px;
+  border-radius: 10px;
+  background-image: linear-gradient(#ff4500, #d9ff00);
+  background-size: 6%;
+  background-repeat: no-repeat;
+}
+.js input[type="range"] {
+  margin: 9px;
+  -webkit-appearance: none;
+  background-color: rgba(233, 243, 242, 0.979);
+  width: 200px;
+  height: 9px;
+  border-radius: 10px;
+  background-image: linear-gradient(#ff4500, #d9ff00);
+  background-size: 10%;
+  background-repeat: no-repeat;
+}
+.java input[type="range"] {
+  margin: 9px;
+  -webkit-appearance: none;
+  background-color: rgba(233, 243, 242, 0.979);
+  width: 200px;
+  height: 9px;
+  border-radius: 10px;
+  background-image: linear-gradient(#ff4500, #d9ff00);
+  background-size: 6%;
+  background-repeat: no-repeat;
+}
+.cyc input[type="range"] {
+  margin: 0px;
+  -webkit-appearance: none;
+  background-color: rgba(233, 243, 242, 0.979);
+  width: 200px;
+  height: 9px;
+  border-radius: 10px;
+  background-image: linear-gradient(#ff4500, #d9ff00);
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+.cir input[type="range"] {
+  margin: 0px;
+  -webkit-appearance: none;
+  background-color: rgba(233, 243, 242, 0.979);
+  width: 200px;
+  height: 9px;
+  border-radius: 10px;
+  background-image: linear-gradient(#ff4500,#d9ff00 );
+  background-size: 60%;
+  background-repeat: no-repeat;
+}
+
+.html input:hover{
+  background-color: rgb(8, 15, 15);
+  background-image: linear-gradient(#00ffd0, #ff4500);
+}
+.css input:hover{
+  background-color: rgb(8, 15, 15);
+  background-image: linear-gradient(#00ffd0, #ff4500);
+}
+.js input:hover{
+  background-color: rgb(8, 15, 15);
+  background-image: linear-gradient(#00ffd0, #ff4500);
+}
+.python input:hover{
+  background-color: rgb(8, 15, 15);
+  background-image: linear-gradient(#00ffd0, #ff4500);
+}
+.java input:hover{
+  background-color: rgb(8, 15, 15);
+  background-image: linear-gradient(#00ffd0, #ff4500);
+}
+.cir input:hover{
+  background-color: rgb(8, 15, 15);
+  background-image: linear-gradient(#00ffd0, #ff4500);
+}
+.cyc input:hover{
+  background-color: rgb(8, 15, 15);
+  background-image: linear-gradient(#00ffd0, #ff4500);
+}
+.achi {
+  padding-top: 20px;
+  
+  letter-spacing: 1px;
+}
+.achi:hover  {
+
+  color: rgb(255, 0, 21);
+ }
+
+.achi_p {
+  color: white;
+  padding-top: 10px;
+  list-style: circle;
+}
+.achi_p :hover{
+  color: #f97c00;
+  transform:scale(1.1);
+}
+.profile :hover{
+  color: #00ff66;
+  
+}
+.skills:hover{
+  color: #f9dc00;
+  
+}
+.achi  :hover{
+  color: #f9dc00;
+  
+}
+/* --------------------------------------- */
+
+.rightside {
+  position: relative;
+  background: rgb(248, 250, 217);
+  padding: 40px;
+}
+
+.func{
+  display: flex;
+  
+}
+
+
+.func .work {
+  width: 40%;
+ letter-spacing: 0.5px;
+  padding: 0 0 0 20px;
+  margin: 0 0 0 0;
+  
+}
+.func .edu {
+  width: 40%;
+  letter-spacing: 0.5px;
+  padding: 10px 5px 0px 50px;
+  margin: 0 15px 0 0;
+
+}
+
+.func {
+  width: 100%;
+  padding: 11px;
+  margin-top: 70px;
+}
+.func:hover > div {
+  transition-duration: 0.5s;
+}
+.func:hover > div:hover h3 i {
+  transform: scale(1.25);
+}
+.func:hover > div:not(:hover) {
+  opacity: 0.5;
+}
+.resume .func h3 {
+  transition-duration: 0.3s;
+  margin-top: 0px;
+  
+}
+.func h3 i {
+  color: blue;
+  background-color:rgb(255, 255, 1);
+  width: 42px;
+  height: 42px;
+  font-size: 20px;
+  line-height: 42px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 8px;
+  transition-duration: 0.3s;
+}
+.func h3 , .edu h3{
+  color: black;
+  text-align: left;
+  margin: 10px;
+}
+
+.func .work small,
+.func .edu small {
+  display: block;
+  opacity: 0.7;
+  color:rgb(2, 19, 19);
+}
+.func .work ul li,
+.func .edu ul li {
+  list-style:circle;
+  position: relative;
+  margin-left: 20px;
+  padding-left: 25px;
+  padding-bottom: 15px;
+  list-style: none;
+  
+  
+}
+.func .work ul li:hover::before,
+.func .edu ul li:hover::before {  
+  animation: circlel 1.2s infinite;
+}
+.func .work ul li:hover span,
+.func .edu ul li:hover span {
+  color: rgb(0, 8, 255);
+  
+}
+@keyframes circlel {
+  from {
+    box-shadow: 0 0 0 0px rgb(255, 64, 0);
+    
+  }
+  to {
+    box-shadow: 0 0 0 6px rgba(6, 255, 234, 0);
+    
+  }
+}
+.func .work ul li:first-of-type::before,
+.func .edu ul li:first-of-type::before {
+  width: 6px;
+  height: 6px;
+  
+}
+.func .work ul li:last-of-type,
+.func .edu ul li:last-of-type {
+  padding-bottom: 3px;
+}
+.func .work ul li:last-of-type::after,
+.func .edu ul li:last-of-type::after {
+  border-radius: 2px;
+}
+.func .work ul li::before,
+.func .work ul li::after,
+.func .edu ul li::before,
+.func .edu ul li::after {
+  content: "";
+  display: block;
+  position:absolute ;
+}
+.func .work ul li::before,
+.func .edu ul li::before {
+  width: 7px;
+  height: 7px;
+  border: 3px solid white;
+  background: orange;
+  border-radius: 50%;
+  left: -5px;
+  z-index: 1;
+}
+.func .work ul li::after,
+.func .edu ul li::after {
+  width: 3px;
+  height: 100%;
+  background: rgb(153, 235, 240);
+  left: -1px;
+  top: 0;
+}
+.func .work ul li span,
+.func .edu ul li span {
+  transition-duration: 0.3s;
+}
+
+
+
+/* ------------------------------------- */
+.func {
+  clear: both;
+  
+  padding-right: 1px;
+}
+
+
+.func .skills-soft {
+  clear: both;
+ 
+  padding-right: 15px;
+  margin: 1px 0 0;
+}
+.func .skills-soft ul {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.func .skills-soft ul li {
+  position: relative;
+  list-style: none;
+}
+.func .skills-soft ul li:hover svg .cbar_b 
+ {
+  stroke: rgb(255, 255, 0);
+  stroke-width: 4px;
+}
+.func .skills-soft ul li:hover svg .cbar_pr
+ {
+  stroke: rgb(255, 255, 0);
+  stroke-width: 4px;
+}
+.func .skills-soft ul li:hover svg .cbar_ps
+ {
+  stroke: rgb(255, 255, 0);
+  stroke-width: 4px;
+}
+.func .skills-soft ul li:hover svg .cbar_i 
+ {
+  stroke: rgb(255, 255, 0);
+  stroke-width: 4px;
+}
+.func .skills-soft ul li:hover span,
+.func .skills-soft ul li:hover small {
+  transform: scale(1.3);
+  text-align: center;
+  
+}
+.func .skills-soft ul li svg {
+  width: 98%;
+  fill: transparent;
+  transform: rotate(-90deg);
+}
+.func .skills-soft ul li svg circle {
+  stroke-width: 2px;
+  stroke: rgb(102, 98, 98);
+}
+.func .skills-soft ul li svg .cbar_ps {
+  stroke-width: 3px;
+  stroke: orange;
+  stroke-linecap: round;
+  stroke-dasharray: 280;
+  stroke-dashoffset: 40;
+}
+.func .skills-soft ul li svg .cbar_i {
+  stroke-width: 3px;
+  stroke: orange;
+  stroke-linecap: round;
+  stroke-dasharray: 280;
+  stroke-dashoffset: 140;
+}
+.func .skills-soft ul li svg .cbar_b {
+  stroke-width: 3px;
+  stroke: orange;
+  stroke-linecap: round;
+  stroke-dasharray: 280;
+  stroke-dashoffset: 75;
+}
+.func .skills-soft ul li svg .cbar_pr {
+  stroke-width: 3px;
+  stroke: orange;
+  stroke-linecap: round;
+  stroke-dasharray: 280;
+  stroke-dashoffset: 120;
+}
+.func .skills-soft ul li span{
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 52%;
+  transition-duration: 0.3s;
+}
+.func .skills-soft ul li small {
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 60%;
+  transition-duration: 0.3s;
+}
+.func .skills-soft ul li span {
+  top: 40%;
+  position: absolute;
+  display: block;
+  width: 100%;
+  font-size: small;
+  
+  transition-duration: 0.3s;
+
+}
+
+
+/* --------------------------------- */
+.func .Hacking {
+  clear: both;
+ 
+  padding-right: 15px;
+  margin: 1px;
+}
+.func .Hacking ul {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.func .Hacking ul li {
+  position: relative;
+  list-style: none;
+}
+.func .Hacking ul li:hover svg .cbar_b 
+ {
+  stroke: rgb(255, 255, 0);
+  stroke-width: 4px;
+}
+.func .Hacking ul li:hover svg .cbar_pr
+ {
+  stroke: rgb(255, 255, 0);
+  stroke-width: 4px;
+}
+.func .Hacking ul li:hover svg .cbar_ps
+ {
+  stroke: rgb(255, 255, 0);
+  stroke-width: 4px;
+}
+.func .Hacking ul li:hover svg .cbar_i 
+ {
+  stroke: rgb(255, 255, 0);
+  stroke-width: 4px;
+}
+.func .Hacking ul li:hover span,
+.func .Hacking ul li:hover small {
+  transform: scale(1.3);
+  text-align: center;
+  
+}
+.func .Hacking ul li svg {
+  width: 98%;
+  fill: transparent;
+  transform: rotate(-90deg);
+}
+.func .Hacking ul li svg circle {
+  stroke-width: 2px;
+  stroke: rgb(102, 98, 98);
+}
+.func .Hacking ul li svg .cbar_ps {
+  stroke-width: 3px;
+  stroke: rgb(0, 42, 255);
+  stroke-linecap: round;
+  stroke-dasharray: 280;
+  stroke-dashoffset: 80;
+}
+.func .Hacking ul li svg .cbar_i {
+  stroke-width: 3px;
+  stroke: rgb(0, 8, 255);
+  stroke-linecap: round;
+  stroke-dasharray: 280;
+  stroke-dashoffset: 80;
+}
+.func .Hacking ul li svg .cbar_b {
+  stroke-width: 3px;
+  stroke: rgb(21, 0, 255);
+  stroke-linecap: round;
+  stroke-dasharray: 280;
+  stroke-dashoffset: 65;
+}
+.func .Hacking ul li svg .cbar_pr {
+  stroke-width: 3px;
+  stroke: rgb(8, 0, 255);
+  stroke-linecap: round;
+  stroke-dasharray: 280;
+  stroke-dashoffset: 200;
+}
+.func .Hacking ul li span{
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 52%;
+  transition-duration: 0.3s;
+}
+.func .Hacking ul li small {
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 60%;
+  transition-duration: 0.3s;
+}
+.func .Hacking ul li span {
+  top: 40%;
+  position: absolute;
+  display: block;
+  width: 100%;
+  font-size: small;
+  
+  transition-duration: 0.3s;
+
+}
+
+
+/* ------------------------------------ */
+
+
+
+ .func .interests {
+  
+  margin: 0 10px 0 2px;
+  padding: 0px;
+}
+.func .interests-items {
+  box-sizing: border-box;
+  padding: 0 0 15px;
+  width: 100%;
+  
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.func .interests-items div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 80px;
+  border-radius: 50%;
+}
+.func .interests-items div:hover i {
+  transform: scale(1.2);
+}
+.func .interests-items div:hover span {
+  color: rgb(254, 6, 2);
+  transition-duration: 0.3s;
+}
+.func .interests-items div i {
+  font-size: 45px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  color: rgb(255, 119, 0);
+  transition-duration: 0.3s;
+}
+.func .interests-items div span {
+  display: block;
+}  
+/* ------------------------------------------------ */
+
+
+
+.link .interests {
+  
+  margin: 0 10px 0 2px;
+  padding: 0px;
+}
+.link .interests-items {
+  box-sizing: border-box;
+  padding: 0 0 15px;
+  width: 100%;
+  
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.link .interests-items div {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  width: 100px;
+  height: 20px;
+  border-radius: 50%;
+}
+.link .interests-items div:hover i {
+  transform: scale(1.2);
+}
+.link .interests-items div:hover span {
+  color: rgb(254, 6, 2);
+  transition-duration: 0.3s;
+}
+.link .interests-items div i {
+  /* font-size: 45px; */
+  /* width: 60px;
+  height: 60px; */
+  line-height: 60px;
+  color: rgb(255, 119, 0);
+  transition-duration: 0.3s;
+}
+.func .interests-items div span {
+  display: block;
+} 
+/* ---------------------------------------- */
